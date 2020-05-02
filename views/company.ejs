@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<% let company = JSON.parse(companyDetails); %>
+	<h1>Welcome to Boston Software Jobs</h1>
+	<h1> <%= company.name %> </h1>
+	<p> <%= company.description %> </p>
+	<img id="img">
+	<script type="text/javascript">
+		document.getElementById('img').src = company.logo;
+	</script>
+</body>
+</html>
